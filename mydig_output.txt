@@ -1,0 +1,52 @@
+
+Input command: python dns_resolver.py google.co.jp A
+
+Output:
+
+QUESTION SECTION:
+google.co.jp. IN A                                    
+                                                      
+ANSWER SECTION:                                       
+google.co.jp. 300 IN A 142.250.81.227                 
+                                                      
+Query time: 895.44  msec                              
+WHEN: Mon Sep 19 00:38:54 2022                        
+MSG SIZE rcvd: 48
+
+
+**********************************************************************
+
+Input command: python dns_resolver.py google.com NS
+
+Output:
+
+QUESTION SECTION:
+google.com. IN NS                       
+                                        
+ANSWER SECTION:                         
+google.com. 345600 IN NS ns1.google.com.
+google.com. 345600 IN NS ns3.google.com.
+google.com. 345600 IN NS ns4.google.com.
+google.com. 345600 IN NS ns2.google.com.
+                                        
+Query time: 163.82  msec                
+WHEN: Mon Sep 19 00:40:45 2022          
+MSG SIZE rcvd: 48
+
+
+**********************************************************************
+
+Input command: python dns_resolver.py google.com MX
+
+Output:
+
+QUESTION SECTION:
+google.com. IN MX                                     
+                                                      
+ANSWER SECTION:                                       
+google.com. 300 IN MX 10 smtp.google.com.             
+                                                      
+Query time: 184.25  msec                              
+WHEN: Mon Sep 19 00:41:37 2022                        
+MSG SIZE rcvd: 48
+                
